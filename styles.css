@@ -1,0 +1,852 @@
+ CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color: #000;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* , ul */
+/* ol {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****************/
+/* General Styles */
+/*****************/
+
+/*
+primary color: #C96310
+primary hover color: #ed7b1f;
+*/
+
+body, p, a, div, span, input, address{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000;
+	text-decoration: none;
+}
+a:hover{
+	color: #000000;
+}
+
+h1,h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.3;
+	margin-bottom: 20px;
+	color: #000;
+	font-weight: 500;
+}
+
+h1{
+	font-size: 42px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 20px;
+}
+#wrapper{
+	width: 100%;
+	
+}
+.section-heading{
+	margin-bottom: 50px;
+	padding: 0 10%;
+}
+.section-heading h2{
+	font-weight: 500;
+	margin: 15px 0;
+}
+.section-heading h4{
+	font-size: 16px;
+	font-weight: 500;
+	font-style: italic;
+	margin: 10px 0;
+}
+#services,
+#expertise,
+#contact{
+	padding: 3% 3%;
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	color: #fff;
+	background-color: #C96310;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 10px 0;
+}
+.btn:hover{
+	background-color: #ed7b1f;
+}
+#page-header{
+	background: url(images/page-header-bg.jpg) center center no-repeat;
+	background-position: cover;
+	height: 300px;
+}
+#page-header h1{
+	text-align: center;
+	color: #fff;
+}
+
+#page-title{
+	text-align: center;
+	position: relative;
+	top: 10%;
+}
+
+#page-title h1{
+	display: inline-block;
+	padding: 20px 30px;
+	color: #fff;
+	font-weight: bold;
+	background-color: rgba(201,99,16,.75);
+}
+/* Homepage */
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #c82620;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+#myBtn:hover {
+	background-color: #7D1F1B;
+}
+
+/* Hero Section */
+/* #hero-section{
+	background: url('images/maxresdefault.jpg') center center;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 2;
+} */
+
+#hero-section-about{
+	background: url('https://cdn2.hubspot.net/hub/145335/hubfs/best-team-page.jpg?length=1200&name=best-team-page.jpg') center center;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+	z-index: 2;
+}
+
+.carousel-caption{
+	position: absolute !important;
+	left: 50% !important;
+	right: 0% !important;
+	bottom: 23% !important;
+	z-index: 10 !important;
+	padding-top: 2% !important;
+	padding-bottom: 5% !important;
+	background-color: rgba(49,49,49,.4) !important;
+	width: 30% !important;
+	height: 60% !important;
+}
+.carousel-caption h3, .carousel-caption p{
+	color: #fff !important;
+	font-weight: 600 !important;
+	padding: 0% 5%;
+
+}
+
+.carousel-caption h3{
+	font-weight: 600;
+	font-size: 36px !important;
+}
+
+.carousel-caption p{
+	text-align: justify;
+	font-size: 16px;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%) !important;
+}
+
+
+
+/* Header section */
+#header{
+	background-color: rgba(255, 255, 255, .9);
+	z-index: 10;
+	overflow: hidden;
+}
+
+#header-2{
+	background-color: rgba(247, 245, 245, 0.9);
+	z-index: 10;
+	overflow: hidden;
+}
+
+#header-3{
+	background-color: rgba(202, 200, 200, 0.2);
+	z-index: 10;
+	overflow: hidden;
+}
+.logo,
+.navbar{
+	display: inline-block;
+}
+.logo{
+	width: 20%;
+}
+.navbar{
+	width: 78%;
+	text-align: right;
+	
+}
+.navbar li{
+	display: inline-block;
+	
+}
+.navbar li a{
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 600;
+	/* font-family:Aclonica; */
+}
+.navbar li a:hover{
+	background-color: #d4d2d0;
+	color: #000000;
+	/* border-radius: 20px; */
+}
+
+.navbar li .download{
+	background-color: #c82620;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.navbar li .download:hover{
+	background-color: #7d1f1b;
+	color: #fff;
+}
+
+/* hero descrioption */
+
+#hero-description{
+	text-align: center;
+	position: relative;
+	top: 30%;
+}
+#hero-description h1{
+	display: inline-block;
+	padding: 20px 30px;
+	color: #fff;
+	font-weight: bold;
+	background-color: rgba(230, 224, 219, 0.75);
+}
+
+/* Client */
+
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-150px * 12));
+	}
+}
+
+.slider{
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+
+.slider .slide-track{
+	animation: scroll 20s linear infinite;
+	display: flex;
+	width: calc(150px * 21);
+	text-align: center;
+}
+.slide img{
+	height: 100px;
+	width: auto;
+}
+
+.slider .slide{
+	height: 250px;
+	width: 150px;
+}
+
+/* .slide-track h3{
+	font-size: 16px;
+	font-weight: 550;
+}
+
+.slide-track i{
+	font-size: 50px;
+} */
+
+/* slider logo */
+
+/* h2{
+	text-align:center;
+	padding: 20px;
+  } */
+  /* Slider */
+  
+  .slick-slide {
+	  margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+	  width: 100%;
+  }
+  
+  .slick-slider
+  {
+	  position: relative;
+	  display: block;
+	  box-sizing: border-box;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+			  user-select: none;
+	  -webkit-touch-callout: none;
+	  -khtml-user-select: none;
+	  -ms-touch-action: pan-y;
+		  touch-action: pan-y;
+	  -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+	  position: relative;
+	  display: block;
+	  overflow: hidden;
+	  margin: 0;
+	  padding: 0;
+  }
+  .slick-list:focus
+  {
+	  outline: none;
+  }
+  .slick-list.dragging
+  {
+	  cursor: pointer;
+	  cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+	  -webkit-transform: translate3d(0, 0, 0);
+		 -moz-transform: translate3d(0, 0, 0);
+		  -ms-transform: translate3d(0, 0, 0);
+		   -o-transform: translate3d(0, 0, 0);
+			  transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+	  display: table;
+	  content: '';
+  }
+  .slick-track:after
+  {
+	  clear: both;
+  }
+  .slick-loading .slick-track
+  {
+	  visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+	  display: none;
+	  float: left;
+	  height: 100%;
+	  min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+	  float: right;
+  }
+  .slick-slide img
+  {
+	  display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+	  display: none;
+  }
+  .slick-slide.dragging img
+  {
+	  pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+	  display: block;
+  }
+  .slick-loading .slick-slide
+  {
+	  visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+	  display: block;
+	  height: auto;
+	  border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+	  display: none;
+  }
+
+
+/* Services section */
+
+.service-item{
+	display: inline-block;
+	width: 30%;
+	padding: 3% 0;
+}
+.service-item:hover{
+	background-color: #d4d2d0;
+}
+
+.service-item h3 {
+	font-weight: 500;
+}
+
+.service-item h3:hover {
+	font-weight: 550;
+}
+
+.service-item i{
+	font-size: 64px;
+	padding-bottom: 20px;
+}
+/* .service-item i:hover{
+	color: #fff;
+} */
+
+/* exptertise section */
+/* #expertise{
+	background-color: #e5e5e5;
+} */
+
+#expertise h2{
+	font-size: 42px; 
+	text-align: center; 
+	font-weight: 550; 
+	line-height: 1;
+	margin-bottom: 0px;
+}
+
+.expertise-item{
+	display: inline-block;
+	width: 16%;
+	padding: 2% 0;
+}
+.expertise-item:hover{
+	background-color: #d4d2d0;
+}
+.expertise-item i{
+	font-size: 64px;
+	padding-bottom: 20px;
+}
+/* .expertise-item i:hover{
+	color: #fff;
+} */
+.expertise-item h3{
+	font-size: 16px;
+}
+
+/* ************** */
+/* Download Product */
+/* ************** */
+#productsver{
+	padding: 3% 0%;
+	background-color: #E5E5E5;
+}
+
+#productsver .versions th, #download-older .versions th{
+	width: 262px;
+	border: 1px solid;
+	text-align: center;
+}
+
+#productsver .versions tD, #download-older .versions td {
+	border: 1px solid;
+	padding-left: 10px;
+}
+.versions table, #download-older .versions{
+	margin-bottom: 2%;
+}
+
+.older_versions {
+	padding: 1%;
+	background-color: #555555;
+	color: #fff;
+	font-weight: 600;
+}
+
+.older_versions:focus {
+	text-decoration: none;
+	color: #fff;
+	background-color: #7b7a7a;
+}
+
+.older_versions:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #7b7a7a;
+}
+
+
+.algo tr td{
+	width: 100%;
+	border: 1px solid;
+	text-align: center;
+	padding: 5px;
+}
+
+
+/******************/
+/* Contact Section */
+/******************/
+
+
+.contact-form-model{
+	width: 50%;
+	margin: 0 auto;
+}
+#contact h2{
+	color: #000;
+	font-weight: bold;
+}
+
+#contact h3{
+	font-weight: 550;
+}
+#contact{
+	/*background: url('images/contact-bg.jpg') center center no-repeat;*/
+	background-position: cover;
+	color: #fff;
+	background-color: #E5E5E5;
+}
+/*#contact:before{
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(78, 78, 78, .80);
+	position: absolute;
+}*/
+input, 
+textarea{
+	display: inline-block;
+	width: 95%;
+	margin: 5px 0;
+	padding: 10px 15px;
+	font-size: 16px;
+	/* background-color: #e5e5e5; */
+	border: none;
+	font-family: inherit;
+}
+
+input[type="text"]{
+	display: inline-block;
+	width: 47.2%;
+	/*margin-right: 1%;*/
+}
+input[type="submit"]{
+	padding: 10px 0;
+	width: 95.5%;
+	border: 2px solid #000;
+	background-color: #000;
+	color: #fff;
+}
+input[type="submit"]:hover{
+	background-color: #fff;
+	color: #993b2a;
+	font-weight: bold;
+	
+}
+
+
+
+
+/* footer */
+
+#footer{
+	background-color: #585858;
+	padding: 15px 30px;
+	color: #fff;
+	text-align: center;
+	
+}
+
+/* About Us */
+
+.our-work{
+	background-color: #E5E5E5;
+	padding:3% 0% 5% 0%; 
+}
+
+.our-work p{
+	font-family: 'Mulish', sans-serif;
+	font-size: 22px;
+	font-weight: 550;
+	text-align: justify;
+}
+
+/* Flip box */
+
+.flip-box {
+	/* background-color: transparent; */
+	width: 300px;
+	height: 340px;
+	/* border: 1px solid #f1f1f1; */
+	perspective: 1000px;
+	display: inline-block;
+  }
+  
+  .flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+	/* background-color: #bbb; */
+	color: black;
+  }
+
+  .flip-box-front img{
+	border-radius: 5%;
+  }
+  
+  .flip-box-back {
+	/* background-color: dodgerblue; */
+	color: black;
+	transform: rotateY(180deg);
+  }
+
+  .flip-box-back img{
+	/* opacity: .3; */
+	border-radius: 5%;
+	z-index: 0;
+	
+	/* display: block; */
+  }
+
+  .flip-box-back i {
+	font-size: 50px;
+	padding-top: 10px;
+	/* margin-top: -10%; */
+	z-index: -1;
+  }
+
+
+/* end flip box */
+
+
+/******************/
+/* Install Page */
+/******************/
+.help a{
+	color: #fff;
+	background-color: #c82620;
+	padding: 1% 2%;
+	border-radius: 10px;
+	margin: 0% 2%;
+}
+.help a:hover{
+	background-color: #7D1F1B;
+}
+.help{
+	text-align: center;
+	margin: 0% 0% 2% 0%;
+}
+
+.install-page h1{
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.8;
+	margin-bottom: 0px;
+	border-bottom: 1px solid;
+	color: #000;
+}
+
+.install-page h2{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.8;
+	margin-left: 5%;
+	border-bottom: 1px solid;
+	color: #000;
+	padding-top: 10px;
+}
+
+.install-page h3{
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	margin-left: 5%;
+}
+
+.install-page p, .install-page ul li, .install-page ol li, .no{
+	font-size: 16px;
+	margin-left: 5%;
+	margin-bottom: 0px;
+	color: #000;
+}
+
+.install-page ul li p{
+	margin-left: 0%;
+	color: #000;
+}
+.li {
+	color: #000;
+}
+
+.install-page pre{
+	margin-left: 5%;
+	margin-bottom: 5px;
+	padding: 1% 1%;
+	margin-top: 5px;
+}
+
+pre{
+	padding-left: .5em;
+    border: 1px dashed #8cacbb;
+    color: #000;
+    overflow: auto;
+}
+
+.sectionedit125{
+	margin-left: 5%;
+}
+
+.competition table tr .col0{
+	width: 50px;
+	border-bottom: 1px solid;
+}
+
+.competition table tr .col1{
+	width: 200px;
+	border-bottom: 1px solid;
+}
+
+.competition table tr .col2{
+	width: 270px;
+	border-bottom: 1px solid;
+}
+
+.competition table tr .col3{
+	width: 400px;
+	border-bottom: 1px solid;
+}
+
+.competition table tr .col4{
+	width: 50px;
+	border-bottom: 1px solid;
+}
+
+.sectionedit126{
+	margin-left: 5%;
+}
+
+.contest table tr .col0{
+	width: 100px;
+	border-bottom: 1px solid;
+}
+
+.contest table tr .col1{
+	width: 100px;
+	border-bottom: 1px solid;
+}
+
+.contest table tr .col2{
+	width: 770px;
+	border-bottom: 1px solid;
+}

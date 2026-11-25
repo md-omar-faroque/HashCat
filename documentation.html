@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hashcat</title>
+	<link rel="icon" href="images/logo-2.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,700|Montserrat:400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		.logo img{
+			width: 180px;
+			padding-top: 20px;
+		}
+		.bg{
+			background-color:#E5E5E5;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			}
+		/* .sticky {
+			padding-top: 60px;
+		} */
+	</style>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+<div id="wrapper">
+	<div>
+		<div id="header">
+			<div class="logo">
+				<!-- <a href="index.html"><img src="images/logo-2.png"></a> -->
+				<a href="index.html"><img src="images/logo-2.png"></a>
+			</div>
+			<!-- end logo -->
+
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html" href="javascript:void(0)">Home</a></li>
+					<li><a href="about.html" href="javascript:void(0)">About Us</a></li>
+					<li><a href="documentation.html" href="javascript:void(0)">Docs</a></li>
+					<li><a href="index.html#expertise" href="javascript:void(0)">Clients</a></li>
+					<li><a href="#contact" href="javascript:void(0)">Contact</a></li>
+					<li><a class="download" href="index.html#productsver" href="javascript:void(0)">Free Download</a></li>
+                    <li style="padding-left: 20px;" id="google_translate_element"></li>
+				</ul>
+			</div>
+			<!-- end navbar -->
+		</div>
+		<!-- end header -->
+	</div>
+	<!-- end hero-sectoion -->
+<hr>
+	<!-- Start Product -->
+	
+	<section class="p-3">
+		<div class="container">
+			<div class="section-heading-product">
+				<h2 style="font-weight: 600;"> GPU Driver Requirements</h2>
+			</div>
+			<div>
+				<ul>
+					<li>AMD GPUs on Linux require <b>"AMDGPU"</b> (21.50 or later) and "ROCm" (5.0 or later)</li>
+					<li>AMD GPUs on Windows require <b>"AMD Adrenalin Edition"</b> (Adrenalin 22.5.1 exactly)</li>
+					<li>Intel CPUs require <b>"OpenCL Runtime for Intel Core and Intel Xeon Processors"</b> (16.1.1 or later)</li>
+					<li>NVIDIA GPUs require <b>"NVIDIA Driver"</b> (440.64 or later) and <b>"CUDA Toolkit"</b> (9.0 or later)</li>
+				</ul>
+                <h4 style="font-weight: 600;"> Screenshot</h2>
+                <img width="500px" src="https://hashcat.net/hashcat/hashcat.png" alt="">
+                <h4 style="font-weight: 600; padding-top: 1%;"> Algorithms</h2>
+                
+                <table class="algo">
+                    <tr>
+                        <td>MD4</td>
+                        <td>MD5</td>
+                        <td>SHA1</td>
+                        <td>SHA2-224</td>
+                        <td>SHA2-256</td>
+                        <td>SHA2-384</td>
+                    </tr>
+                    <tr>
+                        <td>SHA2-512</td>
+                        <td>SHA3-224</td>
+                        <td>SHA3-256</td>
+                        <td>SHA3-384</td>
+                        <td>SHA3-512</td>
+                        <td>RIPEMD-160</td>
+                    </tr>
+                    <tr>
+                        <td>BLAKE2b-512</td>
+                        <td>GOST R 34.11-2012 (Streebog) 256-bit, big-endian</td>
+                        <td>GOST R 34.11-2012 (Streebog) 512-bit, big-endian</td>
+                        <td>GOST R 34.11-94</td>
+                        <td>GPG (AES-128/AES-256 (SHA-1($pass)))</td>
+                        <td>Half MD5</td>
+                    </tr>
+                    <tr>
+                        <td>Keccak-224</td>
+                        <td>Keccak-256</td>
+                        <td>Keccak-384</td>
+                        <td>Keccak-512</td>
+                        <td>Whirlpool</td>
+                        <td>SipHash</td>
+                    </tr>
+                    <tr>
+                        <td>md5(utf16le($pass))</td>
+                        <td>sha1(utf16le($pass))</td>
+                        <td>sha256(utf16le($pass))</td>
+                        <td>sha384(utf16le($pass))</td>
+                        <td>sha512(utf16le($pass))</td>
+                        <td>md5($pass.$salt)</td>
+                    </tr>
+                    <tr>
+                        <td>md5($salt.$pass)</td>
+                        <td>md5($salt.$pass.$salt)</td>
+                        <td>md5($salt. md5($pass))</td>
+                        <td>md5($salt. md5($pass.$salt))</td>
+                        <td>md5($salt. md5($salt.$pass))</td>
+                        <td>md5($salt. sha1($salt.$pass))</td>
+                    </tr>
+                    <tr>
+                        <td>md5($salt. utf16le($pass))</td>
+                        <td>md5(md5($pass))</td>
+                        <td>md5(md5($pass). md5($salt))</td>
+                        <td>md5(md5(md5($pass)))</td>
+                        <td>md5(sha1($pass))</td>
+                        <td>md5(sha1($pass). $salt)</td>
+                    </tr>
+                    <tr>
+                        <td>md5(sha1($pass). md5($pass).sha1($pass))</td>
+                        <td>md5(sha1($salt). md5($pass))</td>
+                        <td>md5(strtoupper(md5 ($pass)))</td>
+                        <td>md5(utf16le($pass) .$salt)</td>
+                        <td>sha1($pass.$salt)</td>
+                        <td>sha1($salt.$pass)</td>
+                    </tr>
+                    <tr>
+                        <td>sha1($salt.$pass. $salt)</td>
+                        <td>sha1($salt.sha1 ($pass))</td>
+                        <td>sha1($salt.sha1 ($pass.$salt))</td>
+                        <td>sha1($salt.utf16le ($pass))</td>
+                        <td>sha1($salt1.$pass. $salt2)</td>
+                        <td>sha1(CX)</td>
+                    </tr>
+                    <tr>
+                        <td>sha1(md5($pass))</td>
+                        <td>sha1(md5($pass). $salt)</td>
+                        <td>sha1(md5($pass. $salt))</td>
+                        <td>sha1(md5(md5 ($pass)))</td>
+                        <td>sha1(sha1($pass))</td>
+                        <td>sha1(sha1($pass).$salt)</td>
+                    </tr>
+                    <tr>
+                        <td>sha1(sha1($salt.$pass. $salt))</td>
+                        <td>sha1(utf16le($pass). $salt)</td>
+                        <td>sha256($pass.$salt)</td>
+                        <td>sha256($salt.$pass)</td>
+                        <td>sha256($salt.$pass. $salt)</td>
+                        <td>sha256($salt.sha256 ($pass))</td>
+                    </tr>
+                    <tr>
+                        <td>sha256($salt.sha256_bin ($pass))</td>
+                        <td>sha256($salt.utf16le ($pass))</td>
+                        <td>sha256(md5($pass))</td>
+                        <td>sha256(sha256($pass). $salt)</td>
+                        <td>sha256(sha256_bin ($pass))</td>
+                        <td>sha256(utf16le($pass). $salt)</td>
+                    </tr>
+                    <tr>
+                        <td>sha384($pass.$salt)</td>
+                        <td>sha384($salt.$pass)</td>
+                        <td>sha384($salt.utf16le ($pass))</td>
+                        <td>sha384(utf16le($pass). $salt)</td>
+                        <td>sha512($pass.$salt)</td>
+                        <td>sha512($salt.$pass)</td>
+                    </tr>
+                    <tr>
+                        <td>Java Object hashCode()</td>
+                        <td>Linux Kernel Crypto API (2.4)</td>
+                        <td>Windows Hello PIN/Password</td>
+                        <td>Samsung Android Password/PIN</td>
+                        <td>Cisco-ASA MD5</td>
+                        <td>MSSQL (2012, 2014)</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle Transportation Management (SHA256)</td>
+                        <td>VirtualBox (PBKDF2-HMAC-SHA256 & AES-128-XTS)</td>
+                        <td>MS Office 2016 - SheetProtection</td>
+                        <td>Apple Secure Notes</td>
+                        <td>Password Safe v3</td>
+                        <td>Oracle H: Type (Oracle 7+)</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle S: Type (Oracle 11+)</td>
+                        <td>Oracle T: Type (Oracle 12+)</td>
+                        <td>MySQL $A$ (sha256crypt)</td>
+                        <td>PostgreSQL</td>
+                        <td>PostgreSQL CRAM (MD5)</td>
+                        <td>PostgreSQL SCRAM-SHA-256</td>
+                    </tr>
+                </table>
+                <h4 style="font-weight: 600; padding-top: 1%;"> Attack-Modes</h2>
+                    <ul>
+                        <li>Straight</li>
+                        <li>Combination</li>
+                        <li>Brute-force</li>
+                        <li>Hybrid dict + mask</li>
+                        <li>Hybrid mask + dict</li>
+                        <li>Association</li>
+                        <li>accept Rules</li>
+                    </ul>
+                <h4 style="font-weight: 600; padding-top: 1%;"> Supported compute runtimes</h2>
+                    <ul>
+                        <li>AMD OpenCL</li>
+                        <li>AMD ROCm</li>
+                        <li>Apple OpenCL</li>
+                        <li>Apple Metal</li>
+                        <li>Intel OpenCL</li>
+                        <li>NVidia OpenCL</li>
+                        <li>NVidia CUDA</li>
+                        <li>POCL OpenCL</li>
+                    </ul>
+                <h4 style="font-weight: 600; padding-top: 1%;"> Supported compute device types</h2>    
+                    <ul>
+                        <li>GPU</li>
+                        <li>CPU</li>
+                        <li>APU</li>
+                    </ul>
+			</div>
+		</div>
+	</section>
+<hr>
+    <section class="help p-3">
+        <div class="container">
+            <h2 style=" font-weight: 600; padding-bottom: 1%; ">Important Links</h2>
+            <a href="install.html">Installation</a>
+            <a href="https://hashcat.net/forum/" target="_blank" rel="noopener noreferrer">Forum</a>
+            <a href="https://discord.gg/HFS523HGBT" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://github.com/hashcat/hashcat" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="https://twitter.com/hashcat" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+    </section>
+	<!-- End Hardware -->
+
+	<div id="contact">
+        <h2 style="font-family: 'Mulish', sans-serif; margin-bottom: 5px;">Struggling to manage your systems?</h2>
+        <h3>Talk to our services expert!</h3>
+        <div class="contact-form-model">
+            <form method="post" action="" name="contact-form">
+                <input autocomplete="off" type="text" placeholder="First Name" name="first-name">
+                <input autocomplete="off" type="text" placeholder="Last Name" name="last-name" required>
+                <input autocomplete="off" type="email" placeholder="Email" name="email" required>
+                <input autocomplete="off" type="tel" placeholder="Phone Number" name="phone" required>
+                <textarea id="" cols="30" rows="10" placeholder="Message" name="message" required></textarea>
+                <input type="submit" value="submit">
+            </form>
+            <script src="google_sheet.js"></script>
+        </div>
+    </div>
+
+	<!-- End Contact -->
+	<div id="footer">
+		&copy; 2024 | Hashcat LLC | All Rights Reserved
+	</div>
+</div>
+<!-- end wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+    	</script>
+		<script src="script.js"></script>
+		<script type="text/javascript">
+		  function googleTranslateElementInit() {
+			  new google.translate.TranslateElement(
+				  {pageLanguage: 'en'},
+				  'google_translate_element'
+			  );
+		  } 
+	    </script>
+	
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
+

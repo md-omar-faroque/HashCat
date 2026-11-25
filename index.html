@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hashcat</title>
+	<link rel="icon" href="images/logo-2.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,500,700|Montserrat:400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		.logo img{
+			width: 180px;
+			padding-top: 20px;
+		}
+		.bg{
+			background-color:#E5E5E5;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			}
+
+		/* .sticky {
+			padding-top: 60px;
+		} */
+	</style>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+<div id="wrapper">
+	<!-- <div id="google_translate_element"></div>  -->
+
+	<div id="hero-section">
+		<div id="header">
+			<div class="logo">
+				<!-- <a href="index.html"><img src="images/logo-2.png"></a> -->
+				<a href="index.html"><img src="images/logo-2.png"></a>
+			</div>
+			<!-- end logo -->
+
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html" href="javascript:void(0)">Home</a></li>
+					<li><a href="about.html" href="javascript:void(0)">About Us</a></li>
+					<li><a href="documentation.html" href="javascript:void(0)">Docs</a></li>
+					<li><a href="index.html#expertise" href="javascript:void(0)">Clients</a></li>
+					<li><a href="index.html#contact" href="javascript:void(0)">Contact</a></li>
+					<li><a class="download" href="index.html#productsver" href="javascript:void(0)">Free Download</a></li>
+					<!-- <i class="fa fa-download"></i> -->
+					<li style="padding-left: 20px;" id="google_translate_element"></li>
+				</ul>
+			</div>
+			<!-- end navbar -->
+		</div>
+		<!-- end header -->
+	</div>
+			   <!-- start carosuel -->
+	<div>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+	
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" style="height: 550px">
+	
+			<div class="item active">
+			<img src="images/s1.jpg" alt="Los Angeles" style="width:100%;">
+			<div class="carousel-caption slider">
+				<h3>About Hashcat</h3>
+				<p>Hashcat is a password recovery tool. It had a proprietary code base until 2015, but was then released as open source software. Versions are available for Linux, macOS, and Windows. Examples of hashcat-supported hashing algorithms are LM hashes, MD4, MD5, SHA-family and Unix Crypt formats as well as algorithms used in MySQL and Cisco PIX.
+	
+				</p>
+			</div>
+			</div>
+	
+			<div class="item">
+			<img src="images/s2.jpg" alt="Chicago" style="width:100%;">
+			<div class="carousel-caption slider">
+				<h3>Software Types</h3>
+				<p>Previously, two variants of hashcat existed:<br>
+				1. hashcat - CPU-based password recovery tool<br>
+				2. oclHashcat / cudaHashcat - GPU - accelerated tool (OpenCL or CUDA)<br>
+				With the release of hashcat v3.00, the GPU and CPU tools were merged into a single tool called hashcat. The CPU-only version became hashcat-legacy.[4] Both CPU and GPU now require OpenCL.</p>
+			</div>
+			</div>
+		
+			<div class="item">
+			<img src="images/s3.jpg" alt="New York" style="width:100%;">
+			<div class="carousel-caption slider" style="background-color: rgba(0,0,0,.8) !important;">
+				<h3>Attack types</h3>
+				<p>Hashcat offers multiple attack modes for obtaining effective and complex coverage over a hash's keyspace. These modes are: <br>
+				
+				Brute-force attack,
+				Combinator attack,
+				Dictionary attack,
+				Fingerprint attack,
+				Hybrid attack,
+				Mask attack,
+				Permutation attack,
+				Rule-based attack,
+				Table-Lookup attack (CPU only),
+				Toggle-Case attack,
+				PRINCE attack (in CPU version 0.48 and higher only)
+				</p>
+			</div>
+			</div>
+		
+		</div>
+	
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		</div>
+	</div>
+  <!-- end carosuel -->
+	<!-- end hero-sectoion -->
+
+	<!-- End Hero Sction -->
+	<div id="services">
+		<div class="section-heading">
+			<h2 style="font-weight: 600;">Features of <span style="font-size: 50px;">H</span>ashcat</h2>
+			<h3>Hashcat is a robust and versatile security tool designed to elevate your system's protection to unparalleled levels.</h3>
+			<!-- <p>Click on a Service to Learn More</p> -->
+		</div>
+		<div class="service-items">
+			<div class="service-item">
+				<i class="fas fa-cloud-upload-alt"></i>
+				<h3>Enhanced Password Security</h3>
+			</div>
+			<div class="service-item">
+				<i class="fas fa-tv"></i>
+				<h3>Cost-Effective Early Detection</h3>
+			</div>
+			<div class="service-item">
+				<i class="fa fa-key"></i>
+				<h3>Open-source Password Recovery Tool</h3>
+			</div>
+			<div class="service-item">
+				<i class="fa fa-lock-open"></i>
+				<h3>Efficient in Breaking Password Hashes</h3>
+			</div>
+			<div class="service-item">
+				<i class="fas fa-theater-masks"></i>
+				<h3>Proactive Threat Deterrence</h3>
+			</div>
+			<div class="service-item">
+				<i class="far fa-address-card"></i>
+				<h3>Proactive Vulnerability Identification</h3>
+			</div>
+			</div>
+		</div>
+	<!-- end services -->
+
+	<section class="our-work">
+		<div class="container text-center">
+			<h1 class="py-3" style="font-family: 'Mulish', sans-serif; font-weight: 600">Who We Are & What We Do</h1>
+			
+			<p>Hashcat is a highly versatile and powerful password recovery and hash cracking tool that 
+				is widely used in the field of cybersecurity. Developed by Hashcat Cofounders <b>Adnan Habib, Kevin Quintero, Youssef Kabbouch, Sahadat Sayem. </b> 
+				Hashcat is known for its speed and ability to crack a variety of password hashes through various attack methods.
+				It supports a wide range of hashing algorithms, making it a valuable tool for security professionals, penetration testers, and system administrators. </p>
+
+			<p>It's important to note that while Hashcat can be a valuable tool for legitimate security purposes such as 
+				password auditing and penetration testing, its usage should comply with ethical standards and legal regulations.
+				 Unauthorized or malicious use of Hashcat or similar tools is strictly prohibited. Always ensure proper authorization 
+				 and adherence to ethical guidelines when using such tools.</p>
+			
+			
+				 <iframe style="padding-top: 2%;" width="800" height="400" src="https://www.youtube.com/embed/EfqJCKWtGiU?si=bzRG6S3Vl1BsDWkH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</section>
+	
+	<!-- end about -->
+
+		<div id="expertise">
+			<div class="container">
+				<h2>Our Clients</h2>
+			</div>
+		<div class="section-heading">
+			<h3 style="font-size: 22px">Hashcat is a powerful password recovery and hash cracking tool widely used in the cybersecurity domain. Organizations and cybersecurity professionals around the world leverage Hashcat to strengthen the security posture of their systems.</h2>
+		</div>
+		<!-- <div class="expertise-container">
+			<div class="expertise-item">
+				<i class="fas fa-users"></i>
+				<h3>Corporate Security</h3>
+			</div>
+			<div class="expertise-item">
+				<i class="fas fa-building"></i>
+				<h3>Government Agencies</h3>
+			</div>
+			<div class="expertise-item">
+				<i class="fa fa-coins"></i>
+				<h3>Financial Institutions</h3>
+			</div>
+			<div class="expertise-item">
+				<i class="fa fa-school"></i>
+				<h3>Educational Institutions</h3>
+			</div>
+			<div class="expertise-item">
+				<i class="fas fa-globe"></i>
+				<h3>IT Security Firms</h3>
+			</div>
+			<div class="expertise-item">
+				<i class="fas fa-cogs"></i>
+				<h3>Cloud Service Providers</h3>
+			</div>
+		</div> -->
+	
+
+		<section style="padding-bottom: 3%;">
+
+
+			<div class="slider container">
+				<div class="slide-track">
+					<div class="slide"><img src="https://www.kernel.org/theme/images/logos/tux.png" alt="" srcset=""></div>
+					<!-- <div class="slide"><i class="fas fa-users"></i><h3>Corporate Security</h3></div> -->
+					<div class="slide"><img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://synivate.com/wp-content/uploads/vmware_cloud_logo.jpg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://www.webopedia.com/wp-content/uploads/1997/02/Webo.OracleProfile-1024x1024.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://i0.wp.com/arunpotti.com/wp-content/uploads/2021/11/sql-server_logo.jpg?ssl=1" alt="" srcset=""></div>
+					<div class="slide"><img src="https://camranger.com/wp-content/uploads/2018/08/macOS.jpg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://www.kernel.org/theme/images/logos/tux.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://synivate.com/wp-content/uploads/vmware_cloud_logo.jpg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://www.webopedia.com/wp-content/uploads/1997/02/Webo.OracleProfile-1024x1024.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://i0.wp.com/arunpotti.com/wp-content/uploads/2021/11/sql-server_logo.jpg?ssl=1" alt="" srcset=""></div>
+					<div class="slide"><img src="https://camranger.com/wp-content/uploads/2018/08/macOS.jpg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://www.kernel.org/theme/images/logos/tux.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://synivate.com/wp-content/uploads/vmware_cloud_logo.jpg" alt="" srcset=""></div>
+					<div class="slide"><img src="https://www.webopedia.com/wp-content/uploads/1997/02/Webo.OracleProfile-1024x1024.png" alt="" srcset=""></div>
+					<div class="slide"><img src="https://i0.wp.com/arunpotti.com/wp-content/uploads/2021/11/sql-server_logo.jpg?ssl=1" alt="" srcset=""></div>
+					<div class="slide"><img src="https://camranger.com/wp-content/uploads/2018/08/macOS.jpg" alt="" srcset=""></div>
+				</div>
+			</div>
+		</section>
+		</div>
+	<!-- end expertise -->	  
+
+	<!-- Start Product -->
+	<div id="productsver" >
+		<div class="container">
+			<div class="section-heading-product">
+				<h2 style="font-weight: 600;"> Download Now</h2>
+			</div>
+			<div class="versions">
+				<table>
+					<th>Name</th>
+					<th>Version</th>
+					<th>Date</th>
+					<th>Download</th>
+					<th>Signature</th>
+
+					<tr>
+						<td>hashcat binaries</td>
+						<td>v6.2.6</td>
+						<td>2022.09.02</td>
+						<td><a href="https://hashcat.net/files/hashcat-6.2.6.7z">Download</a></td>
+						<td><a href="https://hashcat.net/files/hashcat-6.2.6.7z.asc">PGP</a></td>
+					</tr>
+
+					<tr>
+						<td>hashcat sources</td>
+						<td>v6.2.6</td>
+						<td>2022.09.02</td>
+						<td><a href="https://hashcat.net/files/hashcat-6.2.6.tar.gz">Download</a></td>
+						<td><a href="https://hashcat.net/files/hashcat-6.2.6.tar.gz.asc">PGP</a></td>
+					</tr>
+				</table>
+				<p><a href="older_version.html" class="older_versions"> Download Older Versions</a></p>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- End Product -->
+	
+	<section class="p-5" style="padding:5% 0% 5% 0%;">
+		<div class="container">
+			<div class="section-heading-product">
+				<h2 style="font-weight: 600;"> GPU Driver requirements</h2>
+			</div>
+			<div>
+				<ul>
+					<li>AMD GPUs on Linux require <b>"AMDGPU"</b> (21.50 or later) and "ROCm" (5.0 or later)</li>
+					<li>AMD GPUs on Windows require <b>"AMD Adrenalin Edition"</b> (Adrenalin 22.5.1 exactly)</li>
+					<li>Intel CPUs require <b>"OpenCL Runtime for Intel Core and Intel Xeon Processors"</b> (16.1.1 or later)</li>
+					<li>NVIDIA GPUs require <b>"NVIDIA Driver"</b> (440.64 or later) and <b>"CUDA Toolkit"</b> (9.0 or later)</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<!-- End Hardware -->
+
+	<div id="contact">
+			<h2 style="font-family: 'Mulish', sans-serif; margin-bottom: 5px;">Struggling to manage your systems?</h2>
+			<h3>Talk to our services expert!</h3>
+		<div class="contact-form-model">
+			<form method="post" action="" name="contact-form">
+				<input autocomplete="off" type="text" placeholder="First Name" name="first-name">
+				<input autocomplete="off" type="text" placeholder="Last Name" name="last-name" required>
+				<input autocomplete="off" type="email" placeholder="Email" name="email" required>
+				<input autocomplete="off" type="tel" placeholder="Phone Number" name="phone" required>
+				<textarea id="" cols="30" rows="10" placeholder="Message" name="message" required></textarea>
+				<input type="submit" value="submit">
+			</form>
+			<script src="google_sheet.js"></script>
+		</div>
+	</div>
+
+	<!-- End Contact -->
+	<div id="footer">
+		&copy; <script>document.write(new Date().getFullYear())</script> | Hashcat LLC | All Rights Reserved
+	</div>
+</div>
+<!-- end wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<script src="script.js"></script>
+	
+	<script type="text/javascript">
+	  function googleTranslateElementInit() {
+		  new google.translate.TranslateElement(
+			  {pageLanguage: 'en'},
+			  'google_translate_element'
+		  );
+	  } 
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
+
